@@ -2,7 +2,7 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "src",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
@@ -15,6 +15,35 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@layouts/*": [
+          "app/layouts/*"
+      ],
+      "@core/*": [
+          "app/core/*"
+      ],
+      "@services/*": [
+          "app/services/*"
+      ],
+      "@page/*": [
+          "app/page/*"
+      ],
+      "@modules/*": [
+          "app/modules/*"
+      ],
+      "@components/*": [
+          "app/components/*"
+      ],
+      "@config/*": [
+          "config/*"
+      ],
+      "@env/*": [
+          "environments/*"
+      ],
+      "@testing/*": [
+          "testing/*"
+      ]
+  }
   }
 }
